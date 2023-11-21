@@ -26,9 +26,9 @@ int main()
 
 	while (ongoing)
 	{
-		std::cout << "Welcome to Quiz World's main menu" << std::endl;
+		std::cout << "Welcome to the main menu" << std::endl;
 		std::cout << "Please pick one of the options listed below:" << std::endl;
-		std::cout << " 1) start quiz" << std::endl;
+		std::cout << " 1) start match" << std::endl;
 		std::cout << " 0) quit" << std::endl;
 		std::cin >> menuSelect;
 
