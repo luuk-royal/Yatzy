@@ -3,32 +3,22 @@
 
 #include <iostream>
 #include <vector>
+#include <map>
 #include "DiceRollClass.h"
 
 int main()
 {
-	std::cout << "Welcome to Yatzy!" << std::endl;
+	DiceRollClass diceRollClass;
+	std::map<int, int> test;
 
-	/*
-	try
-	{
-		std::vector<int> test;
-	}
-	catch (const std::exception& e)
-	{
-		printf(e.what());
-	}
-	*/
-
-	std::cout << "Checking files done, moving to menu!" << std::endl;
 	bool ongoing = true;
 	int menuSelect;
 
 	while (ongoing)
 	{
-		std::cout << "Welcome to Quiz World's main menu" << std::endl;
+		std::cout << "Welcome to MiniYatzy!" << std::endl;
 		std::cout << "Please pick one of the options listed below:" << std::endl;
-		std::cout << " 1) start quiz" << std::endl;
+		std::cout << " 1) start MiniYatzy" << std::endl;
 		std::cout << " 0) quit" << std::endl;
 		std::cin >> menuSelect;
 
@@ -42,7 +32,11 @@ int main()
 
 		if (menuSelect == 1)
 		{
-			runQuiz();
+			
+			std::cout << "Starting, try to get the most numbers of a kind!" << std::endl;
+
+			std::vector<int> test = diceRollClass.DiceRoll(5);
+			std::cout << "You threw: " << std::endl;
 		}
 		else if (menuSelect == 0) {
 			ongoing = false;

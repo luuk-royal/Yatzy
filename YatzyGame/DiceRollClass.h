@@ -8,7 +8,8 @@
 
 class DiceRollClass
 {
-	std::vector<int> DiceRoll();
+public:
+	std::vector<int> DiceRoll(int rolls);
 };
 
 #endif
