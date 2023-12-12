@@ -1,7 +1,9 @@
 #include "DiceRollClass.h"
 
-std::vector<int> DiceRollClass::DiceRoll(int rolls)
+void DiceRollClass::DiceRoll(std::vector<int>& dice)
 {
-	int randomNumber = (rand() % 6) + 1;
-	return std::vector<int>();
+	for (size_t i = 0; i < 5; i++)
+	{
+		dice.push_back((rand() % 6) + 1);
+	}
 }

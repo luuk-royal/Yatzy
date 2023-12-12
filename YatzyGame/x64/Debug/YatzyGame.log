@@ -1,7 +1,15 @@
-﻿  DiceRollClass.cpp
-D:\Programming stuff\YatzyGame\YatzyGame\DiceRollClass.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  YatzyGame.cpp
-D:\Programming stuff\YatzyGame\YatzyGame\DiceRollClass.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-D:\Programming stuff\YatzyGame\YatzyGame\YatzyGame.cpp(38,43): error C2589: ';': illegal token on right side of '::'
-D:\Programming stuff\YatzyGame\YatzyGame\YatzyGame.cpp(38,43): error C2062: type 'unknown-type' unexpected
-  Generating Code...
+﻿  YatzyGame.cpp
+C:\Users\luukkaa\source\repos\Yatzy\YatzyGame\DiceRollClass.h(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.36.32532\include\utility(247,16): warning C4267: 'initializing': conversion from 'size_t' to '_Ty1', possible loss of data
+          with
+          [
+              _Ty1=const int
+          ]
+C:\Users\luukkaa\source\repos\Yatzy\YatzyGame\YatzyGame.cpp(15,16): message : see reference to function template instantiation 'std::pair<const int,int>::pair<size_t&,int,0>(_Other1,_Other2 &&) noexcept' being compiled
+          with
+          [
+              _Other1=size_t &,
+              _Other2=int
+          ]
+C:\Users\luukkaa\source\repos\Yatzy\YatzyGame\YatzyGame.cpp(15,15): message : see the first reference to 'std::pair<const int,int>::pair' in 'MiniYatzy'
+  YatzyGame.vcxproj -> C:\Users\luukkaa\source\repos\Yatzy\x64\Debug\YatzyGame.exe

@@ -6,11 +6,45 @@
 #include <map>
 #include "DiceRollClass.h"
 
+void MiniYatzy() {
+	DiceRollClass diceRollClass;
+	std::map<int, int> score;
+
+	for (size_t i = 1; i < 7; i++)
+	{
+		score.insert({ i, -1 });
+	}
+
+	std::map<int, int> amount;
+
+	for (size_t i = 1; i < 7; i++)
+	{
+		amount.insert({ i, 0 });
+	}
+
+	std::vector<int> rolledDice;
+
+	diceRollClass.DiceRoll(rolledDice);
+
+	std::cout << "You threw: ";
+	for (auto it = rolledDice.begin(); it != rolledDice.end(); it++) {
+		std::cout << *it << " ";
+	}
+	std::cout << std::endl;
+	
+	for (size_t i = 0; i < rolledDice.size(); i++)
+	{
+		std::cout << "Before " << amount.at(rolledDice[i]) << std::endl;
+		++amount.at(rolledDice[i]);
+		std::cout << "After " << amount.at(rolledDice[i]) << std::endl;
+	}
+
+	std::cout << "Which numbers would you like to keep?" << std::endl;
+
+}
+
 int main()
 {
-	DiceRollClass diceRollClass;
-	std::map<int, int> test;
-
 	bool ongoing = true;
 	int menuSelect;
 
@@ -34,9 +68,9 @@ int main()
 		{
 			
 			std::cout << "Starting, try to get the most numbers of a kind!" << std::endl;
+			
+			MiniYatzy();
 
-			std::vector<int> test = diceRollClass.DiceRoll(5);
-			std::cout << "You threw: " << std::endl;
 		}
 		else if (menuSelect == 0) {
 			ongoing = false;

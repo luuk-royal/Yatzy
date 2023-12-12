@@ -9,7 +9,7 @@
 class DiceRollClass
 {
 public:
-	std::vector<int> DiceRoll(int rolls);
+	void DiceRoll(std::vector<int>& dice);
 };
 
 #endif
